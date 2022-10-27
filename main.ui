@@ -1,0 +1,829 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>885</width>
+    <height>585</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="toggleRecordBtn">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>121</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>BM JUA_TTF</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>녹화 시작</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="saveAsBMSBtn">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>180</y>
+      <width>121</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>BM JUA_TTF</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>BMS로 저장</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="saveBtn">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>120</y>
+      <width>121</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>BM JUA_TTF</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>저장</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="loadBtn">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>60</y>
+      <width>121</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>BM JUA_TTF</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>불러오기</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="BMSIMG">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>0</y>
+      <width>761</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../src/BMS_IMG.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="P1S">
+    <property name="geometry">
+     <rect>
+      <x>137</x>
+      <y>468</y>
+      <width>93</width>
+      <height>67</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>BM JUA_TTF</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>510</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>BM JUA_TTF</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>SMB v1.0</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::PlainText</enum>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="P2S">
+    <property name="geometry">
+     <rect>
+      <x>781</x>
+      <y>468</y>
+      <width>93</width>
+      <height>67</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>BM JUA_TTF</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="P1L1">
+    <property name="geometry">
+     <rect>
+      <x>234</x>
+      <y>475</y>
+      <width>34</width>
+      <height>52</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>BM JUA_TTF</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="P1L2">
+    <property name="geometry">
+     <rect>
+      <x>271</x>
+      <y>470</y>
+      <width>24</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>BM JUA_TTF</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="P1L4">
+    <property name="geometry">
+     <rect>
+      <x>335</x>
+      <y>470</y>
+      <width>24</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>BM JUA_TTF</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="P1L6">
+    <property name="geometry">
+     <rect>
+      <x>399</x>
+      <y>470</y>
+      <width>24</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>BM JUA_TTF</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="P2L2">
+    <property name="geometry">
+     <rect>
+      <x>589</x>
+      <y>470</y>
+      <width>24</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>BM JUA_TTF</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="P2L4">
+    <property name="geometry">
+     <rect>
+      <x>653</x>
+      <y>470</y>
+      <width>24</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>BM JUA_TTF</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="P2L6">
+    <property name="geometry">
+     <rect>
+      <x>717</x>
+      <y>470</y>
+      <width>24</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>BM JUA_TTF</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="P1L3">
+    <property name="geometry">
+     <rect>
+      <x>298</x>
+      <y>475</y>
+      <width>34</width>
+      <height>52</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>BM JUA_TTF</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="P1L5">
+    <property name="geometry">
+     <rect>
+      <x>362</x>
+      <y>475</y>
+      <width>34</width>
+      <height>52</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>BM JUA_TTF</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="P1L7">
+    <property name="geometry">
+     <rect>
+      <x>426</x>
+      <y>475</y>
+      <width>34</width>
+      <height>52</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>BM JUA_TTF</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="P2L1">
+    <property name="geometry">
+     <rect>
+      <x>552</x>
+      <y>475</y>
+      <width>34</width>
+      <height>52</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>BM JUA_TTF</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="P2L3">
+    <property name="geometry">
+     <rect>
+      <x>616</x>
+      <y>475</y>
+      <width>34</width>
+      <height>52</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>BM JUA_TTF</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="P2L5">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>475</y>
+      <width>34</width>
+      <height>52</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>BM JUA_TTF</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="P2L7">
+    <property name="geometry">
+     <rect>
+      <x>744</x>
+      <y>475</y>
+      <width>34</width>
+      <height>52</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>BM JUA_TTF</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>885</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>toggleRecordBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>toggleRecord()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>58</x>
+     <y>41</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>73</x>
+     <y>584</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>loadBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>load()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>95</x>
+     <y>120</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>111</x>
+     <y>584</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>saveBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>save()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>72</x>
+     <y>181</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>82</x>
+     <y>584</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>saveAsBMSBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>saveAsBMS()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>76</x>
+     <y>243</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>145</x>
+     <y>584</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>P1S</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>OverrideToKeyMappingFunction()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>158</x>
+     <y>534</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>290</x>
+     <y>693</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>P1L1</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>OverrideToKeyMappingFunction()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>246</x>
+     <y>536</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>293</x>
+     <y>661</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>P1L2</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>OverrideToKeyMappingFunction()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>287</x>
+     <y>530</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>277</x>
+     <y>786</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>P1L3</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>OverrideToKeyMappingFunction()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>305</x>
+     <y>533</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>311</x>
+     <y>729</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>P1L4</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>OverrideToKeyMappingFunction()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>342</x>
+     <y>523</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>338</x>
+     <y>770</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>P1L5</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>OverrideToKeyMappingFunction()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>379</x>
+     <y>521</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>386</x>
+     <y>703</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>P1L6</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>OverrideToKeyMappingFunction()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>411</x>
+     <y>526</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>439</x>
+     <y>738</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>P1L7</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>OverrideToKeyMappingFunction()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>439</x>
+     <y>502</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>548</x>
+     <y>725</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>P2L1</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>OverrideToKeyMappingFunction()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>574</x>
+     <y>524</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>658</x>
+     <y>692</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>P2L2</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>OverrideToKeyMappingFunction()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>599</x>
+     <y>519</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>671</x>
+     <y>706</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>P2L3</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>OverrideToKeyMappingFunction()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>633</x>
+     <y>521</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>668</x>
+     <y>701</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>P2L4</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>OverrideToKeyMappingFunction()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>663</x>
+     <y>525</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>721</x>
+     <y>716</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>P2L5</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>OverrideToKeyMappingFunction()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>702</x>
+     <y>537</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>686</x>
+     <y>744</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>P2L6</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>OverrideToKeyMappingFunction()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>735</x>
+     <y>523</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>762</x>
+     <y>768</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>P2L7</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>OverrideToKeyMappingFunction()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>764</x>
+     <y>524</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>834</x>
+     <y>742</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>P2S</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>OverrideToKeyMappingFunction()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>848</x>
+     <y>524</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1077</x>
+     <y>632</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>toggleRecord()</slot>
+  <slot>load()</slot>
+  <slot>save()</slot>
+  <slot>saveAsBMS()</slot>
+  <slot>OverrideToKeyMappingFunction()</slot>
+ </slots>
+</ui>
