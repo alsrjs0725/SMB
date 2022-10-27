@@ -8,7 +8,9 @@ a = Analysis(
     ['main.py'],
     pathex=[],
     binaries=[],
-    datas=[('src/BM JUA_TTF.ttf', 'src'), ('src/BMS_IMG.png', 'src'), ('src/clap.wav', 'src')],
+    datas=[
+            ('src/*', 'src'),
+        ],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},

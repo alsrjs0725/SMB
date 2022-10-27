@@ -9,6 +9,16 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+import os, sys
+
+
+def resource_path(relative_path):
+    try:
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
 
 
 class Ui_MainWindow(object):
@@ -50,7 +60,7 @@ class Ui_MainWindow(object):
         self.BMSIMG = QtWidgets.QLabel(self.centralwidget)
         self.BMSIMG.setGeometry(QtCore.QRect(120, 0, 761, 541))
         self.BMSIMG.setText("")
-        self.BMSIMG.setPixmap(QtGui.QPixmap("./src/BMS_IMG.png"))
+        self.BMSIMG.setPixmap(QtGui.QPixmap(resource_path("./src/BMS_IMG.png")))
         self.BMSIMG.setObjectName("BMSIMG")
         self.P1S = QtWidgets.QPushButton(self.centralwidget)
         self.P1S.setGeometry(QtCore.QRect(137, 468, 93, 67))

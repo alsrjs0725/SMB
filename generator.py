@@ -1,11 +1,19 @@
 from collections import defaultdict
-import os
-import time
+import os, sys, time
 
 
 MAX_LINE_COUNT = 7
 LONG_NOTE_THRESHOLD = 0.1
 SECS_PER_MEASURE = 2  # 1, 2, 3, 4 이외 비추
+
+
+def resource_path(relative_path):
+    try:
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
 
 
 class FileNameError(Exception):
@@ -59,7 +67,7 @@ class Chart:
             os.makedirs(os.path.dirname(path))
         
         if not os.path.isfile(f'{os.path.dirname(path)}\\clap.wav'):
-            with open('./src/clap.wav', 'rb') as file:
+            with open(resource_path('./src/clap.wav'), 'rb') as file:
                 with open(f'{os.path.dirname(path)}\\clap.wav', 'wb') as fos:
                     fos.writelines(file.readlines())
         

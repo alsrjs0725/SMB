@@ -2,13 +2,13 @@ from pynput import keyboard
 from generator import Config, Note, Chart
 from PyQt5 import QtWidgets, QtGui, QtCore
 from forms import KeyMappingWindow, Ui_MainWindow
-import time
+import time, sys, os
 
 
 class MainWindow(QtWidgets.QMainWindow):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs) 
-        QtGui.QFontDatabase.addApplicationFont('./src/BM JUA_TTF.ttf')
+        QtGui.QFontDatabase.addApplicationFont(resource_path('./src/BM JUA_TTF.ttf'))
         self.recording = False
         self.chart = Chart()
         self.pressed = dict()
@@ -143,6 +143,15 @@ class MainWindow(QtWidgets.QMainWindow):
     def closeEvent(self, a0: QtGui.QCloseEvent) -> None:
         self.keymapping_window.close()
         return super().closeEvent(a0)
+
+
+def resource_path(relative_path):
+    try:
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
 
 
 if __name__ == '__main__':
